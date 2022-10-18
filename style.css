@@ -1,5 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+    --text_color: hsl(228, 12%, 48%);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    background-color: var(--white);
+    width: 320px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product__img {
+    width: 100%;
+    height: auto;
+}
+
+.product__img img {
+    width: 100%;
+}
+
+.product__info {
+    margin: 20px;
+}
+
+.product__info .category {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: var(--text_color);
+    margin-bottom: 12px;
+}
+
+.product__info .product__name {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.product__info .product__dsc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--text_color);
+}
+
+.price>p {
+    display: inline-block;
+}
+
+p.price__promo {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan);
+    padding: 5px;
+    margin: 0 20px;
+}
+
+p.price__normal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--dark-cyan);
+    text-decoration: line-through;
+}
+
+
+.add__cart {
+    display: block;
+    background-color: var(--dark-cyan);
+    border: none;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    line-height: 35px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.add__cart i {
+    margin-right: 8px;
+}
+
+.attribution {
+    font-size: 10px;
+    margin-top: 5px;
 }
