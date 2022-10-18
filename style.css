@@ -115,7 +115,7 @@ p.price__normal {
 @media (min-width: 620px) {
     .wrapper {
         width: 580px;
-        height: 450px;
+        min-height: 320px;
         display: flex;
         justify-content: space-between;
         /* align-items: center; */
@@ -134,7 +134,7 @@ p.price__normal {
 
 
     .product__info {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: 30px;
     }
 
@@ -144,7 +144,7 @@ p.price__normal {
     }
 
     .add__cart {
-        margin-top: 40px;
+        margin-top: 30px;
         width: 70%;
         height: 50px;
     }
